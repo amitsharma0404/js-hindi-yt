@@ -41,18 +41,20 @@
 
 const userLoggedIn = true
 const debitcard = true
-const name = "Amit"
+const name = "Tanisha"
 const loggedInFromGoogle = false
 const loggedInFromGmail = true
+const gender = "female"
 
+const title = gender === "male" ? "Mr." :"Mrs."
 if (userLoggedIn && debitcard || loggedInFromGoogle || loggedInFromGmail ){
-    console.log(`${name} you are allowed to buy our course`);
+    console.log(`${title} ${name} you are allowed to buy our course`);
     
 }
 
     
 
 else{
-    console.log(`${name} yor are not allowed to buy our cousre`);
+    console.log(`${title} ${name} yor are not allowed to buy our cousre`);
     
 }
